@@ -1,12 +1,12 @@
 # [Sendbird](https://sendbird.com) Chat SDK for iOS 
 
-## This repository is for Swift Package Manager
-
 [![Platform](https://img.shields.io/badge/Platform-iOS-orange.svg)](https://cocoapods.org/pods/SendBirdSDK)
 [![Languages](https://img.shields.io/badge/Language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/sendbird/sendbird-ios-framework)
 [![CocoaPods](https://img.shields.io/badge/CocoaPods-compatible-green.svg)](https://cocoapods.org/pods/SendBirdSDK)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Commercial License](https://img.shields.io/badge/License-Commercial-brightgreen.svg)](https://github.com/sendbird/sendbird-ios-framework/blob/master/LICENSE.md)
+
+> ⚠️ This repository is for Swift Package Manager only. For versions prior to 3.0.236, please reference the original Sendbird repo here: https://github.com/sendbird/sendbird-ios-framework
 
 ## Table of contents
 
