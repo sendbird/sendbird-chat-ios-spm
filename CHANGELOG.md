@@ -1,5 +1,13 @@
 # Change Log
 
+### v3.0.238 (Nov 15, 2021)
+* Removed excluded architecture.
+
+### v3.0.237 (Nov 10, 2021)
+* Added `includeReactions` field in `SBDMessageRetrievalParams`.
+* Fixed messageType not being copied in `SBDMessageListParams`.
+* Fixed `SBDMessageListParams belongsTo:(message)`, `SBDMessageListParams belongsTo:(messageParams)`.
+
 ### v3.0.236 (Oct 26, 2021) 
 * Added `SBDRestrictionInfo` which contains information for users who are either muted or banned. 
 * Added `SBDRestrictedUser` for muted or banned users, which contains `SBDRestrictionInfo`. 
