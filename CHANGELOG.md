@@ -1,4 +1,8 @@
 # Change Log
+### v3.1.1 (Dec 9, 2021)
+* Fixed a bug that the reply message isn't received when the network is reconnected.
+* Fixed a bug that some messages are disappeared.
+* Improved stability
 
 ### v3.1.0 (Nov 23, 2021) 
 * Local caching support. See [Local Caching](https://sendbird.com/docs/chat/v3/ios/guides/local-caching) for details.
