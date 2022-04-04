@@ -3,21 +3,35 @@
 CHECKSUM=''
 VERSION=''
 
-while getopts v:c: flag
+while getopts v:c:p:r: flag
 do
     case "${flag}" in
+        p) PRODUCT=${OPTARG};;
+        r) REPO=${OPTARG};;
         v) VERSION=${OPTARG};;
         c) CHECKSUM=${OPTARG};;
         *) error "Unexpected option ${flag}";;
     esac
 done
 
+if [ -z $PRODUCT ]; then
+    echo "Product name is required"
+    exit 1
+fi
+
+if [ -z $REPO ]; then 
+    echo "Repository name is required"
+    exit 1
+fi 
+
 if [ -z $CHECKSUM ]; then
     echo "Checksum is required"
+    exit 1
 fi
 
 if [ -z $VERSION ]; then
     echo "Version is required"
+    exit 1
 fi
 
 TEMPLATE="
@@ -25,19 +39,19 @@ TEMPLATE="
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 import PackageDescription
 let package = Package(
-    name: \"SendBirdSDK\",
+    name: \"$PRODUCT\",
     platforms: [.iOS(.v10)],
     products: [
         .library(
-            name: \"SendBirdSDK\",
-            targets: [\"SendBirdSDK\"]
+            name: \"$PRODUCT\",
+            targets: [\"$PRODUCT\"]
         ),
     ],
     dependencies: [],
     targets: [
         .binaryTarget(
-            name: \"SendBirdSDK\",
-            url: \"https://github.com/sendbird/sendbird-ios-framework/releases/download/$VERSION/SendBirdSDK.xcframework.zip\",
+            name: \"$PRODUCT\",
+            url: \"https://github.com/sendbird/$REPO/releases/download/$VERSION/$PRODUCT.xcframework.zip\",
             checksum: \"$CHECKSUM\"
         ),
     ]
