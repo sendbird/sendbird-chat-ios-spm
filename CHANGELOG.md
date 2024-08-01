@@ -1,4 +1,38 @@
 # Changelog
+
+## 3.1.57 (Jul 31, 2024)
+### **Improvements**
+- Fixed a crash where `SBDSessionWebSocketEngine` would crash when establishing a new WebSocket connection. 
+
+## 3.1.56 (Apr 9, 2024)
+### **Improvements**
+
+- Updated iOS deployment target to 12.0
+- Updated Xcode version to 15.0
+- Added `PrivacyInfo.xcprivacy` for [Apple Privacy Manifest](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files)
+
+
+## 3.1.55 (Dec 11, 2023)
+### **Improvements**
+
+- Fixed a crash that could occur when closing websocket connection.
+
+## 3.1.54 (Nov 10, 2023)
+### **Improvements**
+
+- Fixed a crash that could occur when closing websocket connection. 
+
+## 3.1.53 (Sep 27, 2023)
+### **Improvements**
+
+- Fixed an intermittent crash issue when receiving pinned messages.
+
+## 3.1.52 (Aug 24, 2023)
+### **Improvements**
+
+- Fixed a crash issue when websocket starts.
+
+
 ## v3.1.51 (Jul 7, 2023)
 ### **Improvements**
 - Improved stability
