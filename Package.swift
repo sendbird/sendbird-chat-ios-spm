@@ -15,8 +15,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "SendBirdSDK",
-            url: "https://github.com/sendbird/sendbird-ios-framework/releases/download/v3.1.52/SendBirdSDK.xcframework.zip",
-            checksum: "50178c6e3741c4016c625f11ed0108429fe64a948d697e8d09ad4d196cadbce6"
+            url: "https://github.com/sendbird/sendbird-ios-framework/releases/download/v3.1.53/SendBirdSDK.xcframework.zip",
+            checksum: "097017e144ea54766744274f51f0d059168c1e6488de9bd9f1aef46c567d13f3"
         ),
     ]
 )
