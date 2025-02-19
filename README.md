@@ -46,10 +46,12 @@ This section shows you the prerequisites you need to check for using Sendbird Ch
 
 The minimum requirements for Chat SDK for iOS are:
 
-- Mac OS with developer mode enabled
-- Xcode
-- At least one physical iOS device running iOS 11.0 and later
-- Swift 4.0 and later
+- `macOS`
+- `Xcode`
+- `At least one device running`
+  - `iOS 13.0 and later`
+  - `macOS 11.0 and later`
+- `Swift 5.10 or later` or `Objective-C`
 
 ### Add-ons for Sendbird Chat SDK 
 
@@ -98,7 +100,7 @@ $ pod init
 On `Podfile`, add the following lines: 
 
 ```bash
-platform :ios, '11.0'
+platform :ios, '13.0'
 use_frameworks!
 
 target YOUR_PROJECT_TARGET do
