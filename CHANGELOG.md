@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.1.59 (May 7, 2026)
+### **Improvements**
+- Fixed a WebSocket client teardown race that could crash on `disconnect`/`clear` re-entry and stale engine callbacks
+- Added regression test coverage for `SBDWebSocketClient` teardown races and `SBDSessionWebSocketEngine` restart/clear/queue races
+
 ## 3.1.58 (Frb 10, 2025)
 ### **Improvements**
 - Fixed a crash where the delegate method of `SBDWebSocketEngine` would crash when called. 
@@ -36,11 +41,12 @@
 
 - Fixed a crash issue when websocket starts.
 
-
 ## v3.1.51 (Jul 7, 2023)
+
 ### **Improvements**
-- Improved stability
-- Fixed an issue where completionHandler of SBDMain.initWithApplication does not get called if useCaching is set to false
+
+- Improved stability 
+- Fixed an issue where completionHandler of `SBDMain.initWithApplication` does not get called if `useCaching` is set to `false`
 
 ## v3.1.50 (Jun 19, 2023)
 
